@@ -1,0 +1,12 @@
+{
+  "hashcat_path": "/path/to/hashcat",
+  "wordlist": "/path/to/wordlists/rockyou.txt",
+  "potfile": "/path/to/potfile.pot",
+  "clem_rule": "/path/to/rules/clem9669_large.rule",
+  "rules_full": "/path/to/rules/rules_full.rule",
+  "passphrases": "/path/to/passphrases.txt",
+  "passphrase_rule1": "/path/to/rules/passphrase-rule1.rule",
+  "passphrase_rule2": "/path/to/rules/passphrase-rule2.rule",
+  "dictionary": "/path/to/dictionary.txt",
+  "cache_dir": "cache/"
+}

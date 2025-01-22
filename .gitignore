@@ -1,0 +1,3 @@
+# Ignore cache directory and sensitive config.json file
+cache/
+config/config.json
