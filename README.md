@@ -26,27 +26,19 @@ The **`config.json`** file defines default paths for Hashcat, wordlists, rules, 
 Use this section to list your **custom wordlists, rules, and additional resources**, including **URLs** for downloading wordlists.
 
 ### **Wordlists**
-- `/path/to/wordlists/rockyou.txt`
-- `/path/to/wordlists/crackstation.txt`
-- `/path/to/wordlists/custom_wordlist.txt`
+- 🔗 [Rockyou Wordlist](https://weakpass.com/wordlists/rockyou.txt)
+- 🔗 [Passphrases Wordlist](https://github.com/initstring/passphrase-wordlist/releases/download/v2022.1/passphrases.txt)
 - 🔗 [SecLists Passwords](https://github.com/danielmiessler/SecLists/tree/master/Passwords)
 - 🔗 [CrackStation Wordlist](https://crackstation.net/buy-crackstation-wordlist-password-cracking-dictionary.htm)
 
 ### **Rules**
-- `/path/to/rules/clem9669_large.rule`
-- `/path/to/rules/rules_full.rule`
-- `/path/to/rules/hob064.rule`
+- 🔗 [clem9669_large.rule](https://github.com/clem9669/hashcat-rule/blob/master/clem9669_large.rule)
+- 🔗 [rules_full.rule](https://github.com/Unic0rn28/hashcat-rules/blob/main/rules_full.7z)
+- 🔗 [Passphrases Rules](https://github.com/initstring/passphrase-wordlist/tree/master/hashcat-rules)
 - 🔗 [Hashcat Rules Collection](https://github.com/hashcat/hashcat/tree/master/rules)
 
-### **Potfiles**
-- `/path/to/potfile.pot`
-- `/path/to/backup_potfile.pot`
-
 ### **Additional Resources**
-- `/path/to/wordlists/hashmob.net_2024-12-01.found.7z`
-- `/path/to/wordlists/all_in_one.txt.7z`
-- `/path/to/wordlists/rockyou2024.txt.bz2`
-- `/path/to/dictionary.txt`
+- 🔗 [HashMob Wordlists](https://hashmob.net/resources/hashmob)
 - 🔗 [WeakPass Wordlists](https://weakpass.com/wordlists)
 - 🔗 [Kali Linux Wordlists](https://gitlab.com/kalilinux/packages/wordlists)
 
