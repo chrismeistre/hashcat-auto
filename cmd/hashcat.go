@@ -4,8 +4,10 @@ import (
 	"fmt"
 	"hashcat-auto/config"
 	"hashcat-auto/utils"
+	"os"
 	"os/exec"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/fatih/color"
@@ -156,10 +158,16 @@ func ProcessHashcatTasks(hashlist, wordlist, potfile, clemRule, rulesFull, cewlU
 
 	// Step 7: Use CeWL to generate a wordlist and run with rules_full.rule
 	if cewlURL != "" {
+		pwd, err := os.Getwd()
+		if err != nil {
+			color.Red("Error: %v", err)
+			return nil
+		}
+
 		cewlOutputFile := filepath.Join(config.CacheDir, fmt.Sprintf("cewl_wordlist_%s.txt", timestamp))
 		dockerCommand := []string{
 			"run", "--rm",
-			"-v", fmt.Sprintf("%s:/output", config.CacheDir),
+			"-v", fmt.Sprintf("%s/%s:/output", pwd, strings.TrimSuffix(config.CacheDir, "/")),
 			"ghcr.io/digininja/cewl",
 			"-w", fmt.Sprintf("/output/cewl_wordlist_%s.txt", timestamp), cewlURL,
 			"--with-numbers", "--meta", "--email"}
